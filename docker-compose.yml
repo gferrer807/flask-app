@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  mangareader-server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/usr/src/backend
+    ports:
+      - 5000:5000
